@@ -27,13 +27,13 @@ function Dataex() {
   };
   const idstyle = { width: "3%", height: "30px" };
   const prostyle = { width: "7%", height: "30px" };
-  const picstyle = { width: "auto", height: "40px" };
+  const picstyle = { width: "40px", height: "40px" };
   const fnstyle = { width: "8%", height: "30px" };
   const lnstyle = { width: "8%", height: "30px" };
   const genstyle = { width: "6%", height: "30px" };
-  const emastyle = { width: "14%", height: "30px" };
-  const usestyle = { width: "7%", height: "30px" };
-  const domstyle = { width: "10%", height: "30px" };
+  const emastyle = { width: "20%", minWidth: "150px", height: "30px" };
+  const usestyle = { width: "20%", minWidth: "150px", height: "30px" };
+
   const ipstyle = { width: "10%", height: "30px" };
   const unistyle = {
     width: "27%",
@@ -67,9 +67,7 @@ function Dataex() {
           <div className="text-light  p-1" style={usestyle}>
             {val.username}
           </div>
-          <div className="text-light  p-1" style={domstyle}>
-            {val.domain}
-          </div>
+
           <div className="text-light  p-1" style={ipstyle}>
             {val.ip}
           </div>
@@ -111,9 +109,7 @@ function Dataex() {
         <div className="text-light text-center fw-bold p-1" style={usestyle}>
           Username
         </div>
-        <div className="text-light text-center fw-bold p-1" style={domstyle}>
-          Domain
-        </div>
+
         <div className="text-light text-center fw-bold p-1" style={ipstyle}>
           IP
         </div>
